@@ -72,13 +72,13 @@ function ProfilePage() {
     const { first_name, last_name, email } = useLoaderData()
 
     return (<>
-        <main className="max-w-96 mx-auto">
-            <h1 className="mt-24 mx-16 text-2xl text-center font-poppins font-bold">
+        <main>
+            <h1 className="mt-14 mx-16 text-2xl text-center font-poppins font-bold">
                 Profile
             </h1>
             <Form
                 method="POST"
-                className="mt-12 mx-14 flex flex-col gap-8">
+                className="mt-12 mx-14 flex flex-col gap-4">
                 <div>
                     <label htmlFor="emailInput">Email</label>
                     <Input id="emailInput"

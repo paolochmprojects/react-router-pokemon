@@ -22,9 +22,9 @@ function FavoritePage() {
 
     console.log(dataAction)
     return (<>
-        <main>
-            <h1 className="text-center text-4xl font-poppins font-bold mt-8">Favorites</h1>
-            <div className="flex flex-wrap justify-center mt-16 gap-4 ">
+        <main className="overflow-scroll">
+            <h1 className="text-center text-2xl font-poppins font-bold mt-8">Favorites</h1>
+            <div className="flex flex-wrap justify-center mt-8 gap-4">
                 {data.map((pokemon) => {
                     return <div key={`pokemon-` + pokemon.id}
                         className="outline outline-1 rounded-xl w-24 h-24 relative"

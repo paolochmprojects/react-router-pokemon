@@ -39,17 +39,17 @@ function SearchPage() {
 
     return (
         <main>
-            <Form className="flex mx-10 mt-8" method="POST">
+            <Form className="flex mx-5 mt-8" method="POST">
                 <div className="w-2/3">
-                    <Input name="query" type="text" placeholder="bulbasaur" required={true} />
+                    <Input name="query" type="text" placeholder="pokemon name" required={true} />
                 </div>
                 <div className="w-1/3 pl-4">
                     <Button text="search" style="primary" type="submit" />
                 </div>
             </Form>
             {!data && <div className="mt-16 flex flex-col justify-center items-center">
-                <img src={bulbasaurImg} alt="bulbasaur-preview" />
-                <p className="mt-4">Ready to search</p>
+                <img src={bulbasaurImg} className="w-28 h-28" alt="bulbasaur-preview" />
+                <p className="mt-4 text-sm font-normal">Ready to search</p>
             </div>}
 
             {data instanceof Error && <div

@@ -10,7 +10,7 @@ import starActiveImg from "../assets/star-fill.svg"
 
 function NavBar() {
     return (
-        <nav className="absolute z-10 bg-white right-0 left-0 bottom-0 h-16 border-t-4 border-[#b9b9b9]">
+        <nav className="fixed z-10 bg-white right-0 left-0 bottom-0 h-16 border-t-4 border-[#b9b9b9]">
             <div className="flex justify-around h-full items-center">
                 <NavLink to="/profile">
                     {({ isActive }) => isActive ? <img src={personActiveImg} alt="" /> : <img src={personImg} alt="" />}
