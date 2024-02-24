@@ -43,6 +43,7 @@ function FavoritePage() {
                         <h1 className="py-[2px] font-poppins text-center text-[10px] text-white capitalize">{pokemon.pokemon_name}</h1>
                     </div>
                 })}
+                <div className="h-52"></div>
             </div>
         </main>
     </>)
